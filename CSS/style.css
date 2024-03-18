@@ -18,7 +18,7 @@ a:hover {
 }
 
 /*
-  SOcial Links
+  Social Links
 */
 
 .social-other ul {
@@ -40,7 +40,7 @@ a:hover {
   font-size: 18px;
   display: inline-block;
   background: #9AE17B;
-  color: #fff;
+  color: #141416;
   line-height: 40px; /* Center vertically */
   padding: 0; /* Remove padding */
   border-radius: 50%;
@@ -104,7 +104,7 @@ p {
 }
 
 .back-to-top:hover {
-  background: #F4A949;
+  background: #9AE17B;
   color: #fff;
 }
 
@@ -218,7 +218,7 @@ p {
   padding: 10px 0 10px 24px;
   font-size: 15px;
   font-weight: 500;
-  color: #F4A949;
+  color: #9AE17B;
   white-space: nowrap;
   transition: 0.3s;
 }
@@ -510,14 +510,219 @@ This uses CSS variables - so you only have to change the colors in one place */
 }
 /* spin - End */
 
+/*--------------------------------------------------------------
+#About
+--------------------------------------------------------------*/
+#about h2 {
+  color: #F4A949;
+}
 
+#about h5 {
+  color: #9226A4;
+}
 
+#about h6 {
+  color: #9AE17B;
+}
 
-
+#about p {
+  color: #fff;
+}
 /*--------------------------------------------------------------
 # Work Experience
 --------------------------------------------------------------*/
 
+#work h1{
+  font-family: 'Oswald', sans-serif;
+  color: #F4A949;
+  font-weight: 600;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+#work h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+#work p {
+  font-size: 1em;
+  line-height: 1.7;
+  font-weight: 300;
+  color: var(--text-gray);
+}
+
+#work .description {
+  white-space: wrap;
+}
+
+#work a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#work .description {
+  white-space: wrap;
+}
+
+#work .wrap {
+  display: flex;
+  justify: space-between;
+  align-items: stretch;
+  width: 100%;
+  gap: 24px;
+  padding: 24px;
+  flex-wrap: wrap;
+}
+
+#work .box {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  position: relative;
+  padding: 24px;
+  background: #fff;
+}
+
+#work .box-top {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 12px;
+  margin-bottom: 36px;
+}
+
+#work .box-image {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  object-position: 50% 20%;
+}
+
+#work .title-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#work .box-title {
+  border-left: 3px solid var(--purple);
+  padding-left: 12px;
+}
+
+#work .user-follow-info {
+  color: hsl(0, 0%, 60%);
+}
+
+#work .button {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: auto;
+  padding: 16px;
+  color: #000;
+  background: transparent;
+  box-shadow: 0px 0px 0px 1px black inset;
+  transition: background 0.4s ease;
+}
+
+#work .button:hover {
+  background: var(--purple);
+}
+
+#work .fill-one {
+  background: var(--light-bg);
+}
+
+#work .fill-two {
+  background: var(--pink);
+}
+
+/* RESPONSIVE QUERIES */
+
+@media (min-width: 320px) {
+  #work .title-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  #work .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 460px) {
+  #work .title-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+  #work .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 640px) {
+  #work .box {
+    flex-basis: calc(50% - 12px);
+  }
+  #work .title-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 840px) {
+  .title-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .box {
+    flex-basis: calc(33.3% - 16px);
+  }
+  .title-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+  }
+  .user-follow-info {
+    margin-top: 6px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .box {
+    flex-basis: calc(25% - 18px);
+  }
+}
+
+/*----------------------------------------------
+#Source Code
+----------------------------------------------*/
+#sourceCode h1{
+  font-family: 'Oswald', sans-serif;
+  color: #F4A949;
+  font-weight: 600;
+  font-size: 45px;
+  text-transform: uppercase;
+}
 /*----------------------------------------------
 #Contact
 ----------------------------------------------*/
