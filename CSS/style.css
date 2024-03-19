@@ -167,7 +167,7 @@ p {
 }
 
 #header .logo h1 {
-  font-size: 35px;
+  font-size: 28px;
   margin: 0;
   line-height: 1;
   font-weight: 400;
@@ -178,7 +178,7 @@ p {
 #header .logo h1 a:hover {
   color: #9AE17B;
   text-decoration: none;
-  font-family: "Satisfy", sans-serif;
+  font-family: 'Oswald', sans-serif;
 
 }
 
@@ -249,7 +249,7 @@ p {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #F4A949;
+  color: #9AE17B;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -303,13 +303,13 @@ p {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #433f39;
+  color: #783F8E;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #F4A949;
+  color: #9AE07B;
 }
 
 .navbar-mobile .getstarted,
@@ -368,24 +368,6 @@ p {
 }
 
 
-/*--------------------------------------------------------------
-# Sections General
---------------------------------------------------------------*/
-.section-title {
-  text-align: center;
-}
-
-.section-title h2 span {
-  color: #F4A949;
-}
-
-
-@media (min-width: 1024px) {
-  .section-title p {
-    width: 50%;
-  }
-}
-
 /*---------------------------------
   video section
 ---------------------------------*/
@@ -403,126 +385,25 @@ p {
   object-fit: cover; /* Cover the video element */
   object-position: center; /* Center the video element */
 }
-/*--------------------------------------------------------------
-# About
---------------------------------------------------------------*/
-#about {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
 
-/*--------------------------------------------------------------
-# Gallery
---------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap'); 
-@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap');
-
-/* Defining the theme for the card: colors, fonts, spacing. 
-This uses CSS variables - so you only have to change the colors in one place */ 
-:root {
-
-  /* Message area colors */ 
-  --message-bg: #F1EDE9;
-  --message-line: #94ACD4;
-  --message-txt: #333333;
-
-  /* Fonts */ 
-  --font-banner: 'Abril Fatface', cursive;
-  --font-text: 'Shadows Into Light', cursive;
-
-
-}
-
-/* Animations */ 
-
-/* Here we designate an specific animation to an specific element using a class. We have a defined name, time and iteration-count for each animation. We can also define the origin point from which the animation will happen - the default is the center. */  
-.zoom-left-in-out {
-  animation-name: zoom-left-in-out;
-  animation-duration: 1.75s;
-  animation-iteration-count: infinite;
-  transform-origin: left bottom;
-}
-
-/* Here we specify what will change on the element when they animate */ 
-@keyframes zoom-left-in-out {
-  /* Animation will start and end with the same settings */ 
-  0%, 100% {
-    transform: scale(0.95) rotate(2deg);
-  }
-
-  /* Animation will reach those settings 50% into the duration time we set on the declaration */
-  50% {
-    transform: scale(1) rotate(-2deg);
-  }
-}
-
-/* pulse */ 
-.pulse {
-  animation-name: pulse;
-  animation-duration: 1.3s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(0.9);
-  }
-
-  50% {
-    transform: scale(1);
-  }
-}
-/* pulse - End */
-
-/* float */ 
-.float {
-  animation-name: float;
-  animation-duration: 1.9s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(10px);
-  }
-}
-/* float - End */
-
-/* spin */ 
-.spin {
-  animation-name: spin;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; 
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-/* spin - End */
 
 /*--------------------------------------------------------------
 #About
 --------------------------------------------------------------*/
 #about h2 {
+  font-family: 'Oswald', sans-serif;
   color: #F4A949;
+  font-size: 35px;
 }
 
 #about h5 {
   color: #9226A4;
+  font-size: 20px;
 }
 
 #about h6 {
   color: #9AE17B;
+  font-size: 23px;
 }
 
 #about p {
@@ -536,12 +417,12 @@ This uses CSS variables - so you only have to change the colors in one place */
   font-family: 'Oswald', sans-serif;
   color: #F4A949;
   font-weight: 600;
-  font-size: 45px;
+  font-size: 40px;
   text-transform: uppercase;
 }
 
 #work h3 {
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 700;
 }
 
@@ -549,7 +430,7 @@ This uses CSS variables - so you only have to change the colors in one place */
   font-size: 1em;
   line-height: 1.7;
   font-weight: 300;
-  color: var(--text-gray);
+  color: #fff
 }
 
 #work .description {
@@ -581,7 +462,7 @@ This uses CSS variables - so you only have to change the colors in one place */
   flex-basis: 100%;
   position: relative;
   padding: 24px;
-  background: #fff;
+  background: #F4A949;
 }
 
 #work .box-top {
@@ -607,11 +488,11 @@ This uses CSS variables - so you only have to change the colors in one place */
 
 #work .box-title {
   border-left: 3px solid var(--purple);
-  padding-left: 12px;
 }
 
 #work .user-follow-info {
-  color: hsl(0, 0%, 60%);
+  color: #323330;
+  font-size: 1.3em;
 }
 
 #work .button {
@@ -621,7 +502,7 @@ This uses CSS variables - so you only have to change the colors in one place */
   text-align: center;
   margin-top: auto;
   padding: 16px;
-  color: #000;
+  color: #9226A4;
   background: transparent;
   box-shadow: 0px 0px 0px 1px black inset;
   transition: background 0.4s ease;
@@ -713,16 +594,7 @@ This uses CSS variables - so you only have to change the colors in one place */
   }
 }
 
-/*----------------------------------------------
-#Source Code
-----------------------------------------------*/
-#sourceCode h1{
-  font-family: 'Oswald', sans-serif;
-  color: #F4A949;
-  font-weight: 600;
-  font-size: 45px;
-  text-transform: uppercase;
-}
+
 /*----------------------------------------------
 #Contact
 ----------------------------------------------*/
@@ -736,7 +608,7 @@ This uses CSS variables - so you only have to change the colors in one place */
   font-family: 'Oswald', sans-serif;
   color: #F4A949;
   font-weight: 600;
-  font-size: 45px;
+  font-size: 40px;
   text-transform: uppercase;
 }
 /* Adjust video size for smaller screens */
